@@ -1,6 +1,6 @@
 # Audio Music Divider
 
-Library thar allows you to divide audio files into multiple parts based on silent found between them.
+Allows you to divide audio files into multiple parts based on silent found between them.
 
 
 ## How to use
