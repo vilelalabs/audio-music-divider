@@ -15,6 +15,7 @@ ex: "audio.mp3"
 
 ### Next updates
 - [X] Bash Info
-- [ ] filename in args
-- [ ] basic GUI
-- [ ] erase previous converted files
+- [ ] Filename in args
+- [ ] Erase previous converted files
+- [ ] Remove ".wav" text in .mp3 output files
+- [ ] Basic GUI
