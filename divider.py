@@ -21,6 +21,7 @@ def divideIntoParts(fileName):
     i = 0
 
     # while there is data to be processed
+    print("Working on file...")
     while len(data) > minimum_music_samples: 
         for x in range(len(data)):
 
@@ -37,6 +38,7 @@ def divideIntoParts(fileName):
         
             # ponto de corte do áudio
             if x >= cut_point:
+                print(".",end='')
                 break
 
         # save final audio output
