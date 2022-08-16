@@ -13,9 +13,9 @@ ex: "audio.mp3"
 
 - in divider.py its possible to adjust **threshold** for silence detection, **time in silent** and **minimum audio length** to be cutted.
 
-### Next updates
+### Next Updates
 - [X] Bash Info
 - [ ] Filename in args
-- [ ] Erase previous converted files
+- [ ] Erase previous converted files (clear output folder)
 - [ ] Remove ".wav" text in .mp3 output files
 - [ ] Basic GUI
