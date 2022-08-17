@@ -1,21 +1,31 @@
 # Audio Music Divider
 
-Allows you to divide audio files into multiple parts based on silent found between them.
+Allows you to divide MP3 audio files into multiple parts based on silent found between them.
 
 
 ## How to use
 
-- Put on same folder of main.py a MP3 file named "audio" (the extension must be .mp3)
-ex: "audio.mp3"
-- if audio has at least 1 second of silent parts between bigger audio parts (more than 20s), file will be correctly cutted on this parts.
+- Use the following command to divide audio files:
 
-### Customize the cut:
+```
+    python3 main.py <filename.mp3> --mms <minimum_music_samples> --thr <threshold> --std <silent_time_detection>
+```
+Where:
 
-- in divider.py its possible to adjust **threshold** for silence detection, **time in silent** and **minimum audio length** to be cutted.
+| Argument |    Default      |  Explanation |
+|:--------:|:---------------:|:------------|
+| ``--mms``    |    1.000.000  | Minimum samples to be counted as a music  |
+| ``--thr``    |     0.001     |   Minimum sample amplitude to be considered as silent |
+| ``--std``    |     49.000    |    Minimum sample counts of silent to do a cut  |
 
-### Next Updates
-- [X] Bash Info
-- [ ] Filename in args
-- [ ] Erase previous converted files (clear output folder)
-- [ ] Remove ".wav" text in .mp3 output files
-- [ ] Basic GUI
+### Observations: 
+- The default values are good for most cases.
+- For samples consider the **approximated** values:
+    - 1.000.000 samples = 20,8 seconds
+    - 49.000 samples = 1 second
+
+- if audio has at least _1 second_ of silent parts between bigger audio parts (_more than 20s_), file will be correctly cutted on this parts.
+
+- All arguments are **optional**, if not specified, the default values will be used for those (not specified)arguments.
+
+- ``--help`` will show the help message with short description for possible arguments.
