@@ -1,5 +1,8 @@
+#files
 *.mp3
 *.wav
-./output/*
 
-./__pycache__/*
+#folders
+
+/output
+/__pycache__
