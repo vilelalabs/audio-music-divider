@@ -16,13 +16,13 @@ Allows you to divide MP3 audio files into multiple parts based on silent found b
 ```
     python3 main.py <filename.mp3> --mms <minimum_music_samples> --thr <threshold> --std <silent_time_detection>
 ```
-### Customized Params
+## Customized Params
 
-| Argument |    Default       | Time Equivalence (approx)  |Explanation |
-|:--------:|:----------------:|:-----------------:|:------------|
-| ``--mms``    |    1.000.000 |  20.8 seconds     | Minimum samples to be counted as a music  |
-| ``--thr``    |     0.001    |     -             | Minimum sample amplitude to be considered as silent |
-| ``--std``    |     49.000   |   1 second        | Minimum sample counts of silent to do a cut  |
+| Parameter             | Argument |    Default       | Time Equivalence (approx)  |Explanation |
+|:---------------------:|:--------:|:----------------:|:-----------------:|:------------|
+| Minimum Music Samples | ``--mms``    |    1.000.000 |  20.8 seconds     | Minimum samples to be counted as a music  |
+| Threshold             | ``--thr``    |     0.001    |     -             | Minimum sample amplitude to be considered as silent |
+| Silent Time Detection | ``--std``    |     49.000   |   1 second        | Minimum sample counts of silent to do a cut  |
 
 ### Observations: 
 - The default values are good for most cases.
