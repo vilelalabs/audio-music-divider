@@ -26,6 +26,12 @@ Allows you to divide MP3 audio files into multiple parts based on silent found b
 
 All parameters are directly proportional (bigger number =  bigger attribute[time or amplitude])
 
+### Tips on using
+
+- If it's not getting to cut and output is just one or two .mp3 files, consider to increase **Threshold** value manually, if it's cutting in a lot of pieces, decrease this value.
+- Maybe the gap between songs are short, for this cases, decrease **Silent Time Detection** value.
+- **Minimum Music Samples** can help to ignore tiny songs or some transitions between them.
+
 ### Observations: 
 - The default values are good for most cases.
     - if audio has at least _1 second_ of silent parts between bigger audio parts (_more than 20s_), file will be correctly cutted on this parts.
