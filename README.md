@@ -24,15 +24,15 @@ Allows you to divide MP3 audio files into multiple parts based on silent found b
 
 | Parameter             | Argument |    Default       | Time Equivalence (approx)  |Explanation |
 |:---------------------:|:--------:|:----------------:|:-----------------:|:------------|
-| Minimum Music Samples | ``--mms``    |    1,000,000 |  20.8 seconds     | Minimum samples to be counted as a music  |
-| Threshold             | ``--thr``    |     0,001    |     -             | Minimum sample amplitude to be considered as silent |
-| Silent Time Detection | ``--std``    |     49,000   |   1 second        | Minimum sample counts of silent to do a cut  |
+| Minimum Music Samples | ``--mms``    |    1.000,000 |  20.8 seconds     | Minimum samples to be counted as a music  |
+| Threshold             | ``--thr``    |     0.001    |     -             | Minimum sample amplitude to be considered as silent |
+| Silent Time Detection | ``--std``    |     49.000   |   1 second        | Minimum sample counts of silent to do a cut  |
 
 All parameters are directly proportional (bigger number =  bigger attribute[time or amplitude])
 
 ### Tips on using
 
-- If it's not getting to cut and output is just one or two .mp3 files, consider to increase **Threshold** value manually, if it's cutting in a lot of pieces, decrease this value.
+- If it's not getting to cut and output is just one or two .mp3 files, consider to increase **Threshold** value manually (good try, for example, it can be 0.005 to start), if it's cutting in a lot of pieces, decrease this value.
 - Maybe the gap between songs are short, for this cases, decrease **Silent Time Detection** value.
 - **Minimum Music Samples** can help to ignore tiny songs or some transitions between them.
 
