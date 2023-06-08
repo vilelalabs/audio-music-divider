@@ -1,6 +1,6 @@
 # Audio Music Divider
 
-**⚠ ATTENTION: Actually CLI version using (main.py) works far better (GUI need improvments) ⚠**
+**⚠ ATTENTION: Actually CLI version using (main.py) works far better! GUI need improvements! ⚠**
 
 ### Description
 
@@ -30,7 +30,7 @@ Allows you to divide MP3 audio files into multiple parts based on silent found b
 
 All parameters are directly proportional (bigger number =  bigger attribute[time or amplitude])
 
-### Tips on using
+## Tips on using
 
 - If it's not getting to cut and output is just one or two .mp3 files, consider to increase **Threshold** value manually (good try, for example, it can be 0.005 to start), if it's cutting in a lot of pieces, decrease this value.
 - Maybe the gap between songs are short, for this cases, decrease **Silent Time Detection** value.
