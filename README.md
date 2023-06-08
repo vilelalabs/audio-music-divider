@@ -47,7 +47,7 @@ All parameters are directly proportional (bigger number =  bigger attribute[time
 
 ### Known Issues / Future features (I accept pull requests if you want to help implementing features)
 - More information into GUI explaining actual processing happening
-- Warning about trying to execute conversion in a lot big files (actually works goos in .mp3 files below 150Mb).
+- Warning about trying to execute conversion in a lot big files (actually works good in .mp3 files below 150Mb).
 - Integration with [ydc](https://github.com/vilelalabs/ydc)
 - Work with multiple files
 - Choose output folder
