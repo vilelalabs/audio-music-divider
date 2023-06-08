@@ -7,7 +7,6 @@ def divideIntoParts(fileName, mms= 1000000, thr= 0.001, std = 49000):
 
     data, samplerate = sf.read(fileName)
 
-
     selectedData = np.zeros((len(data), 2))
     
     countLowData = 0
@@ -49,5 +48,3 @@ def divideIntoParts(fileName, mms= 1000000, thr= 0.001, std = 49000):
         countLowData = 0
         cut_point = len(data)-1
         i += 1
-        
-    return i
