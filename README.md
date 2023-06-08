@@ -1,5 +1,9 @@
 # Audio Music Divider
 
+**⚠ ATTENTION: Actually CLI version using (main.py) works far better (GUI need improvments) ⚠**
+
+### Description
+
 Allows you to divide MP3 audio files into multiple parts based on silent found between them.
 
 ## Version 2.0 (GUI)
