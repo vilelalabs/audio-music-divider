@@ -6,7 +6,7 @@
 
 Allows you to divide MP3 audio files into multiple parts based on silent found between them.
 
-## Version 2.0 (GUI)
+## Version 2.0 (GUI) - Beta
 
 ⚠ The 2.0 version has a GUI interface, so its not needed to add filename or params to command line. (in Windows) Just double-click in GUI at dist folder:
 ```bash
@@ -36,7 +36,9 @@ All parameters are directly proportional (bigger number =  bigger attribute[time
 - Maybe the gap between songs are short, for this cases, decrease **Silent Time Detection** value.
 - **Minimum Music Samples** can help to ignore tiny songs or some transitions between them.
 
-### Observations: 
+---
+
+### OBSERVATIONS: 
 - The default values are good for most cases.
     - if audio has at least _1 second_ of silent parts between bigger audio parts (_more than 20s_), file will be correctly cutted on this parts.
     </br></br>
@@ -45,9 +47,16 @@ All parameters are directly proportional (bigger number =  bigger attribute[time
 
 - ``--help`` will show the help message with short description for possible arguments. **(only CLI version)**
 
-### Known Issues / Future features (I accept pull requests if you want to help implementing features)
-- More information into GUI explaining actual processing happening
-- Warning about trying to execute conversion in a lot big files (actually works good in .mp3 files below 150Mb).
-- Integration with [ydc](https://github.com/vilelalabs/ydc)
+---
+
+### FUTURE FEATURES
+
+**BASIC**
+- Create better UX for GUI version
+- Add Warning about trying to execute conversion in a lot big files (actually works good in .mp3 files below 150Mb).
 - Work with multiple files
-- Choose output folder
+- Add way to choose output folder
+- Create project integration with [ydc](https://github.com/vilelalabs/ydc)
+
+**ADVANCED**
+- Detect automatically the best params by checking whole audio file for silent/lowest amplitude parts before cutting (this can remove all needing for params).
