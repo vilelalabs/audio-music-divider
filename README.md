@@ -2,6 +2,8 @@
 
 **⚠ ATTENTION: Actually CLI version using (main.py) works far better! GUI need improvements! ⚠**
 
+See notes about downloading video in the OBSERVATIONS section.
+
 ### Description
 
 Allows you to divide MP3 audio files into multiple parts based on silent found between them.
@@ -47,16 +49,18 @@ All parameters are directly proportional (bigger number =  bigger attribute[time
 
 - ``--help`` will show the help message with short description for possible arguments. **(only CLI version)**
 
+- Downloading videos: Actually our solution is not working, for that, now,  we recommend to download from one of this websites: [Save From Net](https://en1.savefrom.net/102-youtube-music-downloader-10up.html) or [YT5S](https://yt5s.biz/en200/youtube-to-mp3). close any pop ups and newew pages that will open and keep clicking on 'download button' until the file download start. This websites can go down at any time. We are not owners of this websites so we have any responsability for anything that can happen by visiting, downloading or any actions in the websites and not responsible for any of their functionality.
+
 ---
 
 ### FUTURE FEATURES
 
 **BASIC**
-- Create better UX for GUI version
+- Create better UX for GUI version (GUI version seems broken for some reason - so now it's a fix to be done)
 - Add Warning about trying to execute conversion in a lot big files (actually works good in .mp3 files below 150Mb).
 - Work with multiple files
 - Add way to choose output folder
-- Create project integration with [ydc](https://github.com/vilelalabs/ydc)
+- Create project integration with [ydc](https://github.com/vilelalabs/ydc) [possible cancelled - this project isn't working anymore]
 
 **ADVANCED**
 - Detect automatically the best params by checking whole audio file for silent/lowest amplitude parts before cutting (this can remove all needing for params).
